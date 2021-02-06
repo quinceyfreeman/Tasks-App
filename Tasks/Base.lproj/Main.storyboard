@@ -95,9 +95,26 @@
                     <view key="view" contentMode="scaleToFill" id="7QW-5L-0B4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vvd-Wf-Roc">
+                                <rect key="frame" x="12" y="56" width="390" height="794"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hpQ-cX-4rZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vvd-Wf-Roc" firstAttribute="leading" secondItem="hpQ-cX-4rZ" secondAttribute="leading" constant="12" id="I8L-XC-WiQ"/>
+                            <constraint firstItem="hpQ-cX-4rZ" firstAttribute="trailing" secondItem="Vvd-Wf-Roc" secondAttribute="trailing" constant="12" id="WGA-fT-zXs"/>
+                            <constraint firstItem="Vvd-Wf-Roc" firstAttribute="top" secondItem="hpQ-cX-4rZ" secondAttribute="top" constant="12" id="uAb-Rq-sEQ"/>
+                            <constraint firstItem="hpQ-cX-4rZ" firstAttribute="bottom" secondItem="Vvd-Wf-Roc" secondAttribute="bottom" constant="12" id="yI0-mJ-Jqe"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="Vvd-Wf-Roc" id="wUZ-gd-MW8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QAz-iq-6dg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
